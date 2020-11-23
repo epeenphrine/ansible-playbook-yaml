@@ -1,0 +1,2 @@
+need to add -kK flag for sudo password example:
+ansible-playbook -vvv -kK testing.yaml

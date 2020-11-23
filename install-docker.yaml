@@ -1,0 +1,9 @@
+---
+- name: install docker 
+  hosts: ubuntu-servers 
+  remote_user: dong
+
+  tasks:
+    - name: install docker 
+      shell: apt install docker.io docker-compose -y
+      become: yes

@@ -1,0 +1,8 @@
+---
+- name: update 
+  hosts: ubuntu-servers
+  remote_user: dong 
+  tasks:
+    - name: update and upgrade all ubuntu VMs
+      shell: apt update -y && apt upgrade -y
+      become: yes

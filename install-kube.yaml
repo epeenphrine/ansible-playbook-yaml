@@ -1,0 +1,17 @@
+---
+- name: install kubernetes
+  hosts: atticserver 
+  remote_user: dong 
+
+  tasks:
+    - name: run install script for kubernetes
+      script: /home/dong/scripts/install-kuber/install.sh
+      become: yes
+- name: 
+  hosts: ubuntuserver1 
+  remote_user: dong 
+
+  tasks:
+    - name: kubernetes master setup
+      script: /home/dong/scripts/install-kuber/kube-adm.sh
+      become: yes
